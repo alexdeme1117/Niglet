@@ -4,3 +4,18 @@ body{
     background-size: cover;
     
 }
+button {
+    top: 500px;
+    left: 300px;
+    position: absolute;
+    font-size: xxx-large;
+    font-family: cursive;
+    background: mediumblue;
+    border: none;
+    color: ghostwhite;
+    padding: 15px;
+}
+button:hover {
+    background: blue;
+    border: 1px solid ghostwhite;
+}
