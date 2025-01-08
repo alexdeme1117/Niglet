@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="text/css">
+    <link rel="stylesheet" href="style.css">
     <title>Tech Tips</title>
 </head>
 <body>
-    <button OnClick="alert('Wat tf iz deeez?!');">Nyomjmeg!</button>
-    <img src="monitor.png">
+    <button ID="btn" OnClick="document.getElementById('image').src='monitortwo.png'; document.getElementById(this.id).style.display='none';">Nyomjmeg!</button>
+    <img ID="image" src="monitor.png">
 </body>
 </html>
