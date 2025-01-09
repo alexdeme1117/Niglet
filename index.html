@@ -7,7 +7,21 @@
     <title>Tech Tips</title>
 </head>
 <body>
-    <button ID="btn" OnClick="document.getElementById('image').src='monitortwo.png'; document.getElementById(this.id).style.display='none';">Nyomjmeg!</button>
-    <img ID="image" src="monitor.png">
+    <script language="JScript">
+        toggle = false;
+        function Power() {
+            if(!toggle) {
+                document.getElementById('image').src='monitortwo.png';
+                toggle = true;
+            } else {
+                document.getElementById('image').src='monitor.png';
+                toggle = false;
+            }
+        }
+    </script>
+    <img ID="image" src="monitor.png" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="825,670,850,696" OnClick="Power();">
+      </map>
 </body>
 </html>
